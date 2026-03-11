@@ -58,7 +58,7 @@ export function Header({ onRefresh, showArchiveLink = true }: HeaderProps) {
           <RadarLogo size={28} />
           <div className="header-logo-text">
             <div className="header-logo-name">AI Radar</div>
-            <div className="header-subtitle">16 sources · live</div>
+            <div className="header-subtitle">26 sources · live</div>
           </div>
           <LiveBadge />
         </div>
