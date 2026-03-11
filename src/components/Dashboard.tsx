@@ -146,7 +146,7 @@ function StatsRow({ counts, metadata }: { counts: any; metadata: Metadata | null
     { label: 'Research',    value: counts.research,                        danger: false },
     { label: 'Tools',       value: counts.tool,                            danger: false },
     { label: 'Breaking',    value: metadata?.highCount ?? counts.high,     danger: true  },
-    { label: 'Sources',     value: metadata?.sourceCount ?? 16,            danger: false },
+    { label: 'Sources',     value: metadata?.sourceCount ?? 26,            danger: false },
   ];
   return (
     <div className="stats-row">
@@ -178,7 +178,7 @@ function TrendingSidebar({ trending, metadata, lastUpdated }: { trending: Trendi
         {[
           { label: 'Last updated',    value: lastUpdated ? timeAgo(lastUpdated) : '—' },
           { label: "Today's items",   value: metadata?.todayCount ?? '—' },
-          { label: 'Active sources',  value: metadata?.sourceCount ?? 16 },
+          { label: 'Active sources',  value: metadata?.sourceCount ?? 26 },
           { label: 'Breaking',        value: metadata?.highCount ?? '—' },
         ].map(s => (
           <div key={s.label} className="sidebar-row">
@@ -295,7 +295,7 @@ function LoadingSkeleton() {
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="animate-spin">
           <path d="M21 12a9 9 0 1 1-6.219-8.56"/>
         </svg>
-        <span className="skeleton-loader__text">Loading from 16 sources…</span>
+        <span className="skeleton-loader__text">Loading from 26 sources…</span>
       </div>
     </div>
   );
