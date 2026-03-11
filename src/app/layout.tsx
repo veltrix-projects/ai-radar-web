@@ -5,7 +5,7 @@ import { Toaster } from 'sonner';
 
 export const metadata: Metadata = {
   title: 'AI Radar — Real-time AI Intelligence',
-  description: 'Live feed of AI models, research papers, tools, and breaking news from 16+ sources.',
+  description: 'Live feed of AI models, research papers, tools, and breaking news from 26+ sources.',
   keywords: ['AI news', 'machine learning', 'AI tools', 'research papers', 'LLM'],
   openGraph: { title: 'AI Radar', description: 'Real-time AI intelligence dashboard', type: 'website' },
 };
